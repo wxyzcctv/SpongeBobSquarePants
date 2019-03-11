@@ -45,9 +45,11 @@ body {
 }
 .actions>button.active{
     box-shadow: 1px 1px 1px rgba(0,0,0,0.8)
+    /* 这里表示选中某个按钮之后出现自己设置的样式 */
 }
 .actions>button:focus{
     outline: none
+    /* 这里主要是为了消除点击按钮的时候清楚默认的样式 */
 }
 
 
