@@ -271,7 +271,7 @@
         z-index:1;
         transition: all 0.2s ease-in-out;
         overflow: hidden;
-        background-color: rgb(77, 0, 10);
+        background-color: rgb(117, 0, 10);
         position: absolute;
         top: 47.5vh;
         left: calc(50% - 28.125vh);
