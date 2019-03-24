@@ -45,10 +45,15 @@
     }
     let code = `
     #body {
+      borde:1px solid red;
         position: relative;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
         background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .spot {
         position: absolute;
@@ -113,16 +118,18 @@
       }
       #face {
         position: relative;
+        height:80vh;
         width: 75vh;
         margin: 0 auto;
         transform: scale(1, 1);
       }
       #eyes {
         width: 67.5vh;
+        width:100%;
+        height:30vh;
         margin: 0 auto;
         position: relative;
         top: 12.5vh;
-        border:1px solid red;
       }
       .lash {
         border: 0.875vh solid black;
@@ -133,54 +140,54 @@
       #leftlash1 {
         position: absolute;
         top: -4.25vh;
-        left: 10vh;
+        left: 6vh;
         transform: rotate(-35deg);
       }
       #leftlash2 {
         position: absolute;
         top: -5vh;
-        left: 15.625vh;
+        left: 12.625vh;
         transform: rotate(0deg);
       }
       #leftlash3 {
         position: absolute;
         top: -4.25vh;
-        left: 21.25vh;
+        left: 18.25vh;
         transform: rotate(35deg);
       }
       #rightlash1 {
         position: absolute;
         top: -4.25vh;
-        right: 21.25vh;
+        right: 18.25vh;
         transform: rotate(-35deg);
       }
       #rightlash2 {
         position: absolute;
         top: -5vh;
-        right: 15.625vh;
+        right: 12.625vh;
         transform: rotate(0deg);
       }
       #rightlash3 {
         position: absolute;
         top: -4.25vh;
-        right: 10vh;
+        right: 6vh;
         transform: rotate(35deg);
       }
     .eye {
         overflow: hidden;
         border: 1.25vh solid black;
         background-color: white;
-        width: 31.25vh;
-        height: 31.25vh;
+        width: 30vh;
+        height: 30vh;
         border-radius: 100%;
       }
       #lefteye {
         position: absolute;
-        left: 0;
+        left:-3vh;
       }
       #righteye {
         position: absolute;
-        right: 0;
+        right: -3vh
       }
       .iris {
         transition: all 0.1s ease-in-out;
@@ -236,11 +243,14 @@
         height: 11.25vh;
         border-radius: 50%;
         background-image: 
-        radial-gradient(0.75vh at 9.375vh 3.125vh, rgb(231, 45, 22) 0%, 
+        radial-gradient(0.75vh at 9.375vh 3.125vh, 
+          rgb(231, 45, 22) 0%, 
         rgb(231, 45, 22) 100%, transparent),
-        radial-gradient(0.75vh at 6.25vh 6.25vh, rgb(231, 45, 22) 0%, 
+        radial-gradient(0.75vh at 6.25vh 6.25vh, 
+          rgb(231, 45, 22) 0%, 
         rgb(231, 45, 22) 100%, transparent),
-        radial-gradient(0.75vh at 3.125vh 3.125vh, rgb(231, 45, 22) 0%, 
+        radial-gradient(0.75vh at 3.125vh 3.125vh,
+           rgb(231, 45, 22) 0%, 
         rgb(231, 45, 22) 100%, transparent);
       }
       #leftcheek {
@@ -270,12 +280,17 @@
         border:1.25vh solid rgb(0, 0, 0);
         border-radius: 0 0 30% 30%;
         background-image:
-        radial-gradient(6.875vh at 30.625vh 25vh, rgb(248, 158, 167) 0%, 
+        radial-gradient(6.875vh at 30.625vh 25vh, 
+          rgb(248, 158, 167) 0%, 
         rgb(248, 158, 167) 100%,  transparent),
-        radial-gradient(7.5vh at 24.375vh 25vh, rgb(248, 158, 167) 0%, 
-        rgb(248, 158, 167) 90%, #000 91%, #000 100%, transparent),
-        radial-gradient(7.5vh at 30.625vh 25vh, rgb(248, 158, 167) 0%, 
-        rgb(248, 158, 167) 90%, #000 91%, #000 100%, transparent)
+        radial-gradient(7.5vh at 24.375vh 25vh, 
+          rgb(248, 158, 167) 0%, 
+        rgb(248, 158, 167) 90%, #000 91%, 
+        #000 100%, transparent),
+        radial-gradient(7.5vh at 30.625vh 25vh, 
+          rgb(248, 158, 167) 0%, 
+        rgb(248, 158, 167) 90%, #000 91%, 
+        #000 100%, transparent)
           }
       #mouth:hover {
         height: 0px;
